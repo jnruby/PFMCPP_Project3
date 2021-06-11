@@ -36,51 +36,51 @@ Sub Object 1: Steering Wheel
     Name 4 things you'll find on the:    Steering Wheel
         1) paddle shifters
         2) 'cruise control' controls
-        3) 
-        4) 
+        3) sound system controls
+        4) horn
     Name 2 things you can do with the:   Steering Wheel
         1) adjust cruise control settings.
-        2)
+        2) adjust the music volume
         
 Sub Object 2: Instrument Cluster
     Name 4 things you'll find on the:   Instrument Cluster
-        1)
-        2)
-        3)
-        4)
+        1)  speedometer
+        2)  tachometer
+        3)  odometer
+        4)  fuel efficiency display
     Name 3 things you can do with the:   Instrument Cluster
-        1)
-        2)
-        3)
+        1)  see the current speed in mph
+        2)  see the current speed in kph
+        3)  see the range until the car runs out of gas
     
 Sub Object 3: Environment Controls
     Name 3 things you'll find on the:    Environment Controls
-        1)
-        2)
-        3)
+        1)  switch to recirculate the air
+        2)  temperature control
+        3)  control to defrost the front window
     Name 3 things you can do with the:   Environment Controls
-        1)
-        2)
-        3)
+        1)  turn the air temperature up and down
+        2)  set the temperature to auto
+        3)  allow outside air into the A/C system
 
 Sub Object 4: Infotainment System
     Name 3 things you'll find on the:    Infotainment System
-        1)
-        2)
-        3)
+        1)  current time
+        2)  outside temperature
+        3)  music source
     Name 3 things you can do with the:   Infotainment System
-        1)
-        2)
-        3)
+        1)  select AM radio
+        2)  pause the current music file
+        3)  see current compass direction
 
 Sub Object 5: Seat 
     Name 3 things you'll find on the:    Seat
-        1)
-        2)
-        3)
+        1)  headrest
+        2)  seat position controls
+        3)  lumbar control
     Name 2 things you can do with the:   Seat
-        1)
-        2)
+        1)  increase lumbar support
+        2)  move seat forward
 */
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
