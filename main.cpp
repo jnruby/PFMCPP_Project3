@@ -54,59 +54,59 @@ Thing: Car Wash
  */
 
 /*
-Thing 1)
+Thing 1) guitar store
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1)  amount of capos in stock
+    2)  number of electric basses sold
+    3)  number of ukeleles in stock
+    4)  number of hours worked by repairperson
+    5)  net sales of strings
 3 things it can do:
-    1)
-    2)
-    3)
+    1)  appraise a guitar
+    2)  rent a banjo
+    3)  restring guitar
  */
 
 /*
-Thing 2)
+Thing 2) automatic coffee maker
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1)  weight of beans in hopper
+    2)  amount of filters loaded
+    3)  amout of water in carafe
+    4)  temperature of thermostat in brewer
+    5)  speed of the grinder
 3 things it can do:
-    1)
-    2)
-    3)
+    1)  grind coffee beans
+    2)  brew the coffee
+    3)  beep when coffee is brewed
  */
 
 /*
-Thing 3)
+Thing 3) computer monitor
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) percent brightness of the screen
+    2) percent volume of the internal speaker
+    3) how many external monitors are connected
+    4) time until automatically turn off 
+    5) amount of saturation 
 3 things it can do:
-    1)
-    2)
-    3)
+    1) go to sleep
+    2) turn on "movie" display mode
+    3) calibrate colors 
  */
 
 /*
-Thing 4)
+Thing 4) riding lawnmower
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1)  which gear it is currently in
+    2)  amount of gas
+    3)  height of grass blade
+    4)  speed of lawnmower
+    5)  number of cycles until blade change
 3 things it can do:
-    1)
-    2)
-    3)
+    1)  activate emergency brake
+    2)  raise blade level
+    3)  drive backwards
  */
 
 
