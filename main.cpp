@@ -111,17 +111,17 @@ Thing 4) riding lawnmower
  */
 
 /*
-Thing 10) digital multimeter
+Thing 10) hospital
 5 properties:
-    1) selector knob
-    2) power switch
-    3) LCD screen
-    4) temperature input  
-    5) external probes
+    1) ER
+    2) research lab
+    3) waiting room
+    4) operating room  
+    5) cafeteria
 3 things it can do:
-    1) measure capacitance
-    2) show battery life of the meter
-    3) hold current measurement on screen
+    1) resuscitate patient
+    2) administer anesthetic
+    3) schedule new appointment
  */
 
 
