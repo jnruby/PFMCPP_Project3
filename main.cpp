@@ -111,17 +111,17 @@ Thing 4) riding lawnmower
  */
 
 /*
-Thing 10)
+Thing 10) digital multimeter
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) selector knob
+    2) power switch
+    3) LCD screen
+    4) temperature input  
+    5) external probes
 3 things it can do:
-    1)
-    2)
-    3)
+    1) measure capacitance
+    2) show battery life of the meter
+    3) hold current measurement on screen
  */
 
 
