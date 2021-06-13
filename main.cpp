@@ -125,73 +125,73 @@ Thing 4) riding lawnmower
  */
 
 /*
-Thing 5)
+Thing 5) ER
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of bandages in stock
+    2) number of admitted patients
+    3) time until next cleaning
+    4) BPM on heartrate monitor
+    5) number of doctors on duty
 3 things it can do:
-    1)
-    2)
-    3)
+    1) stop bleeding
+    2) intake patient
+    3) clean for next shift
  */
 
 /*
-Thing 6)
+Thing 6)  research lab
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) temperature of storage fridge
+    2) time remaining in PCR cycle
+    3) amount of petri dishes
+    4) number of finished experiments this week
+    5) percent full of hazmat bin
 3 things it can do:
-    1)
-    2)
-    3)
+    1) make vaccine
+    2) test sample for yeast
+    3) dispose of pipettes
  */
 
 /*
-Thing 7)
+Thing 7) waiting room
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of magazine subscriptions
+    2) color temperature of mood lighting
+    3) toner lever of photocopier
+    4) number of cups left in water dispenser
+    5) channel selected on TV
 3 things it can do:
-    1)
-    2)
-    3)
+    1) issue insurance papers for signing
+    2) admit patient for appoitment
+    3) switch room to nightime ambience
  */
 
 /*
-Thing 8)
+Thing 8) operating room
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) sharpness setting of scalpel sharpener (1-9)
+    2) music volume
+    3) O2 pressure in tank (psi)
+    4) temperature of cauterization iron
+    5) number of clean masks
 3 things it can do:
-    1)
-    2)
-    3)
+    1) remove appendix from patient
+    2) suture a head wound
+    3) restart heart beating
  */
 
 /*
-Thing 9)
+Thing 9) cafeteria
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) gallons of jello remaining
+    2) temperature of hot plate
+    3) percentage of clean vs dirty dishes
+    4) pressure of CO2 at soda machine
+    5) number of coffee mugs
 3 things it can do:
-    1)
-    2)
-    3)
+    1) switch from lunch to dinner shift
+    2) serve green beans
+    3) clean dishes
  */
 
 /*
