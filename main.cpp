@@ -131,6 +131,45 @@ Thing 1) guitar store
     3)  restring guitar
  */
 
+
+
+struct guitarStore
+{
+    //amount of capos in stock
+    int numCapos = 30;
+    //number of electric basses sold
+    int numBassesSold = 3;
+    //number of ukeleles in stock
+    int numUkeleles = 6;
+    //number of hours worked by repairperson
+    float weeklyRepairHours = 30.5f;
+    //net sales of strings
+    int netStringSales = 40;
+
+    struct Guitar
+    {
+        std::string brand = "Cordoba";
+        std::string model = "F7";
+        float ageOfStrings = 2.6f;
+        bool hasAStrap = false;
+        bool inTune = true;
+
+        void smash(bool repairable = false);
+        void strum(int numberOfStrings = 6, bool usePick = false);
+        int tremoloSpeed(int yearsOfPractice);
+
+    };
+
+    //appraise a guitar
+    float assessGuitarValue( Guitar guitar );
+    //rent a banjo
+    float rentBanjo(bool isASchool);
+    //restring guitar
+    void restringGuitar( Guitar guitar );
+
+    Guitar guitarOnLoan;
+};
+
 /*
 Thing 2) automatic coffee maker
 5 properties:
@@ -144,7 +183,26 @@ Thing 2) automatic coffee maker
     2)  brew the coffee
     3)  beep when coffee is brewed
  */
+struct CoffeeMaker
+{
+    //weight of beans in hopper
+    double gramsOfBeans = 120.66;
+    //amount of filters loaded
+    int numberOfFilters = 12;
+    //amout of water in carafe
+    double mlOfWater = 450.2;
+    //temperature of thermostat in brewer
+    double thermostatTemp = 97;
+    //speed of the grinder
+    int grinderSpeed = 4;
 
+    //grind coffee beans
+    void grindBeans(int grindSetting);
+    //brew the coffee
+    void brewCoffee(int coffeeTypeSelector, double brewVolume);
+    //beep when coffee is brewed
+    void beepAfterBrew(bool silentMode);
+};
 /*
 Thing 3) computer monitor
 5 properties:
@@ -158,6 +216,31 @@ Thing 3) computer monitor
     2) turn on "movie" display mode
     3) calibrate colors 
  */
+struct ComputerMonitor
+{
+    //percent brightness of the screen
+    int brightness = 90;
+    //percent volume of the internal speaker
+    int volume = 0;
+    //how many external monitors are connected
+    int numberOfExternalConnections = 1;
+    //time until automatically turn off 
+    float timeUntilShutdown = 9.5f;
+    //amount of saturation 
+    int saturation = 55;
+
+
+    //go to sleep
+    void sleepMode(bool deepSleep);
+    //turn on "movie" display mode
+    void movieMode(int width, int height, bool rearProjection);
+    //calibrate colors
+    void calibrateColors(int colorThemeSetting);
+
+};
+
+
+
 
 /*
 Thing 4) riding lawnmower
@@ -173,6 +256,44 @@ Thing 4) riding lawnmower
     3)  drive backwards
  */
 
+struct ridingMower
+{
+    //which gear it is currently in
+    int gearSelection = 3;
+    //amount of gas
+    float gasVolume = 4.3f;
+    //height of grass blade
+    float grassHeight = 3.4f;
+    //speed of lawnmower
+    int driveSpeed = 8;
+    //number of cycles until blade change
+    int bladeWearCycle = 30;
+
+    struct Blade
+    {
+        std::string season = "Winter";
+        std::string material = "steel";
+        bool canBeSharpened = false;
+        int sharpnessPercentage = 99;
+        char recycleCode = 'D';
+
+        int measureBladeRPM(int numberOfCuttingEdges);
+        void selfDestruct();
+        bool verifyBladeOrientation(bool bladeInstalled);
+    };
+
+
+    //activate emergency brake
+    void emergencyBrake(bool deepSleep);
+    //raise blade level
+    void changeBladeLevel( Blade blade );
+    //drive backwards
+    void driveBackwards(int speed = 1);
+
+    Blade extraSharpBlade;
+};
+
+
 /*
 Thing 5) ER
 5 properties:
@@ -186,6 +307,31 @@ Thing 5) ER
     2) intake patient
     3) clean for next shift
  */
+
+struct ER
+{
+    //number of bandages in stock
+    int numberBandages = 600;
+    //number of admitted patients
+    int numberPatients = 19;
+    //time until next cleaning
+    float timeUntilCleaning = 45.25f;
+    //BPM on heartrate monitor
+    int heartRateBPM = 72;
+    //number of doctors on duty
+    int doctorsOnDuty = 3;
+
+    //stop bleeding
+    void stopBleeding(std::string injuryType, int bloodLoss);
+    //intake patient
+    int admitPatient(bool atCapacity);
+    //clean for next shift
+
+
+};
+
+
+
 
 /*
 Thing 6)  research lab
@@ -201,6 +347,44 @@ Thing 6)  research lab
     3) dispose of pipettes
  */
 
+struct ResearchLab
+{
+    //temperature of storage fridge
+    double fridgeTemp = -14;
+    //time remaining in PCR cycle
+    double timeRemainingInPCR = 92;
+    //amount of petri dishes
+    int numberOfPetriDishes = 302;
+    //number of finished experiments this week
+    int finishedExperiments = 4;
+    //percent full of hazmat bin
+    int hazmatWasteLevel = 80;
+
+    struct PetriDish
+    {
+        std::string growthMedium = "agar agar";
+        bool containsHazardousMaterial = false;
+        double overnightGrowthSize = 3;
+        int dishSize = 5;
+        bool smellsBad = true;
+
+        void incubateDish(double incubatorTemp);
+        void cleanDish(double autoclaveTemp);
+        int countActiveCultures(std::string microscopeType);
+    };
+
+    //make vaccine
+    void makeVaccine( PetriDish petridish );
+    //test sample for yeast
+    int countYeastCultures( PetriDish petridish );
+    //dispose of pipettes
+    void disposeOfPipette(bool requiresGloves);
+
+    PetriDish highGrowthDish;
+
+};
+
+
 /*
 Thing 7) waiting room
 5 properties:
@@ -214,6 +398,29 @@ Thing 7) waiting room
     2) admit patient for appoitment
     3) switch room to nightime ambience
  */
+
+struct WaitingRoom
+{
+    //number of magazine subscriptions
+    int numberOfSubscriptions = 12;
+    //color temperature of mood lighting
+    double lightingColorTemp = 4700;
+    // toner lever of photocopier
+    int tonerLevel = 40;
+    //number of cups left in water dispenser
+    int cupsInDispenser = 140;
+    //channel selected on TV
+    int tvChannel = 13;
+
+    //issue insurance papers for signing
+    void issueInsurancePapers(double repeatCustomerRewards);
+    //admit patient for appoitment
+    int admitPatient();
+    //switch room to nightime ambience
+    void changeToNightAmbience(bool subwooferConnected);
+
+};
+
 
 /*
 Thing 8) operating room
@@ -229,6 +436,27 @@ Thing 8) operating room
     3) restart heart beating
  */
 
+struct OperatingRoom
+{
+    //sharpness setting of scalpel sharpener (1-9)
+    int scalpelSharpness = 9;
+    //music volume
+    float musicVolume = 32.44f;
+    //O2 pressure in tank (psi)
+    float o2Pressure = 42.2f;
+    //temperature of cauterization iron
+    float cauterizeTemp = 323.23f;
+    //number of clean masks
+    int numberOfCleanMasks = 34;
+
+    //remove appendix from patient
+    void removeAppendix();
+    //suture a head wound
+    void sutureHeadWound();
+    //restart heart beating
+    int restartHeart(float defribrillatorVoltage);
+};
+
 /*
 Thing 9) cafeteria
 5 properties:
@@ -242,7 +470,26 @@ Thing 9) cafeteria
     2) serve green beans
     3) clean dishes
  */
+ struct Cafeteria
+ {
+    //gallons of jello remaining
+    int gallonsOfJello = 6;
+    //temperature of hot plate
+    double hotPlateTemp = 66;
+    //percentage of clean vs dirty dishes
+    double cleanVsDirty = 23;
+    //pressure of CO2 at soda machine
+    double co2Psi = 24;
+    //number of coffee mugs
+    int numberOfCoffeeMugs = 42;
 
+    //switch from lunch to dinner shift
+    void lunchToDinner();
+    //serve green beans
+    void serveGreenBeans(bool dishAvailable, std::string secretIngredient = "cumin");
+    //clean dishes
+    void cleanDishes(double waterPressure);
+ };
 /*
 Thing 10) hospital
 5 properties:
@@ -256,8 +503,26 @@ Thing 10) hospital
     2) administer anesthetic
     3) schedule new appointment
  */
+struct Hospital
+{
+    //ER
+    ER er;
+    //research lab
+    ResearchLab researchLab;
+    //waiting room
+    WaitingRoom waitingRoom;
+    //operating room
+    OperatingRoom operatingRoom;
+    //cafeteria
+    Cafeteria cafeteria;
 
-
+    //resuscitate patient
+    void resuscitatePatient(int BPM = 12);
+    //administer anesthetic
+    void administerAnesthetic();
+    //schedule new appointment
+    double scheduleAppointment(bool hasID = true);
+};
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
