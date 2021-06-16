@@ -133,7 +133,7 @@ Thing 1) guitar store
 
 
 
-struct guitarStore
+struct GuitarStore
 {
     //amount of capos in stock
     int numCapos = 30;
@@ -157,7 +157,6 @@ struct guitarStore
         void smash(bool repairable = false);
         void strum(int numberOfStrings = 6, bool usePick = false);
         int tremoloSpeed(int yearsOfPractice);
-
     };
 
     //appraise a guitar
@@ -229,14 +228,12 @@ struct ComputerMonitor
     //amount of saturation 
     int saturation = 55;
 
-
     //go to sleep
     void sleepMode(bool deepSleep);
     //turn on "movie" display mode
     void movieMode(int width, int height, bool rearProjection);
     //calibrate colors
     void calibrateColors(int colorThemeSetting);
-
 };
 
 
@@ -256,7 +253,7 @@ Thing 4) riding lawnmower
     3)  drive backwards
  */
 
-struct ridingMower
+struct RidingMower
 {
     //which gear it is currently in
     int gearSelection = 3;
@@ -281,7 +278,6 @@ struct ridingMower
         void selfDestruct();
         bool verifyBladeOrientation(bool bladeInstalled);
     };
-
 
     //activate emergency brake
     void emergencyBrake(bool deepSleep);
@@ -326,8 +322,6 @@ struct ER
     //intake patient
     int admitPatient(bool atCapacity);
     //clean for next shift
-
-
 };
 
 
@@ -381,7 +375,6 @@ struct ResearchLab
     void disposeOfPipette(bool requiresGloves);
 
     PetriDish highGrowthDish;
-
 };
 
 
@@ -418,7 +411,6 @@ struct WaitingRoom
     int admitPatient();
     //switch room to nightime ambience
     void changeToNightAmbience(bool subwooferConnected);
-
 };
 
 
